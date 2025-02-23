@@ -1,0 +1,201 @@
+[ Info: Julia version info
+[ Info: Julia executable: /home/tohamy/julia-1.6.1/bin/julia
+[ Info: Trying to import PyCall...
+┌ Warning: PyCall is already installed.  However, you may have trouble using
+│ this Python executable because it is statically linked to libpython.
+│ 
+│ For more information, see:
+│     https://pyjulia.readthedocs.io/en/latest/troubleshooting.html
+│ 
+│ Python executable:
+│     /vilsrv-storage/dinari/miniconda3/envs/condirit/bin/python
+│ Julia executable:
+│     /home/tohamy/julia-1.6.1/bin/julia
+└ @ Main /vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/julia/install.jl:90
+Julia Version 1.6.1
+Commit 6aaedecc44 (2021-04-23 05:59 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+      Ubuntu 16.04.7 LTS
+  uname: Linux 4.4.0-210-generic #242-Ubuntu SMP Fri Apr 16 09:57:56 UTC 2021 x86_64 x86_64
+  CPU: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz: 
+                 speed         user         nice          sys         idle          irq
+       #1-40  1200 MHz     995827 s          6 s     788287 s  133629028 s          0 s
+       
+  Memory: 251.79366302490234 GB (238169.62890625 MB free)
+  Uptime: 338884.0 sec
+  Load Avg:  1.77  5.2  6.73
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-11.0.1 (ORCJIT, broadwell)
+Environment:
+  TERM = xterm-256color
+  LD_LIBRARY_PATH = :/home/tohamy/anaconda3/envs/python3/lib/:/vilsrv-storage/dinari/miniconda3/envs/python3/lib/:/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/
+  PATH = /home/tohamy/julia-1.6.1/bin:/vilsrv-storage/dinari/miniconda3/envs/condirit/bin:/vilsrv-storage/dinari/miniconda3/condabin:/vilsrv-storage/dinari/miniconda3/bin:/home/tohamy/.vscode-server/bin/e713fe9b05fc24facbec8f34fb1017133858842b/bin:/home/tohamy/bin:/home/tohamy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/cuda-9.0/bin:/vilsrv-storage/julia/julia-1.0.3/bin:/snap/bin
+  HOME = /home/tohamy
+Data mixture: [ 1677  2443   636  2106  1149  6889  2355  3644   972 10610 13494  3827
+  6877  8043  2531  2056  2109  1585  2075   154 10493   482  3289 10163
+   341]  , where N is:  100000
+D reg gamma 0
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 200)
+Fitting k-means w data shape (100000, 200)
+Done: Fitting k-means w data shape (100000, 200)
+
+Running DP on (100000, 200)
+True
+Irit's wrapper!
+Done: Running DP
+
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 200)
+
+Running DP on (100000, 200)
+True
+Irit's wrapper!
+Done: Running DP
+
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 0 it 0] dloss = 1.4578237533569336, gloss = 0.6840081810951233, prop_real = 1.0, modes = 1, kl = 2.6650700251318225
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 1 it 1000] dloss = 1.3768073320388794, gloss = 0.7034713625907898, prop_real = 0.60016, modes = 24, kl = 0.0005745983592428057
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 2 it 2000] dloss = 1.3842353820800781, gloss = 0.7146334648132324, prop_real = 0.76546, modes = 24, kl = 0.0002940273269984222
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 3 it 3000] dloss = 1.3881011009216309, gloss = 0.7188328504562378, prop_real = 0.87398, modes = 25, kl = 0.00023195918656050446
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 4 it 4000] dloss = 1.385495901107788, gloss = 0.6997997760772705, prop_real = 0.88072, modes = 25, kl = 0.00019056534953768579
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 200)
+
+Running DP on (100000, 200)
+True
+Irit's wrapper!
+Done: Running DP
+
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 5 it 5000] dloss = 1.3863568305969238, gloss = 0.6879013776779175, prop_real = 0.98852, modes = 25, kl = 0.00014051837699315052
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 6 it 6000] dloss = 1.3862030506134033, gloss = 0.697683572769165, prop_real = 0.98012, modes = 24, kl = 0.00022192320953879241
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 7 it 7000] dloss = 1.3869696855545044, gloss = 0.7018526792526245, prop_real = 0.98436, modes = 25, kl = 0.00030283150640638345
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 8 it 8000] dloss = 1.3866057395935059, gloss = 0.6934027075767517, prop_real = 0.99476, modes = 25, kl = 0.00021108578015186367
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:163: RuntimeWarning: overflow encountered in exp
+  resp_unnorm = np.exp(log_resp_unnorm)     # (N, K)
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/dpmmpython/dpmmwrapper.py:164: RuntimeWarning: invalid value encountered in true_divide
+  resp = (resp_unnorm.T / np.sum(resp_unnorm, axis=1)).T   # (N, K)
+[epoch 9 it 9000] dloss = 1.3868926763534546, gloss = 0.6957533359527588, prop_real = 0.99196, modes = 25, kl = 0.00022061761227774748
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 200)
+
+Running DP on (100000, 200)
+True
+Irit's wrapper!
+
+signal (15): Terminated
+in expression starting at none:0
+add_fast at ./fastmath.jl:165 [inlined]
+macro expansion at /home/tohamy/.julia/packages/DPMMSubClusters/3xfQ9/src/utils.jl:80 [inlined]
+macro expansion at ./simdloop.jl:77 [inlined]
+macro expansion at /home/tohamy/.julia/packages/DPMMSubClusters/3xfQ9/src/utils.jl:79 [inlined]
+macro expansion at ./simdloop.jl:77 [inlined]
+dcolwise_dot! at /home/tohamy/.julia/packages/DPMMSubClusters/3xfQ9/src/utils.jl:77
+unknown function (ip: 0x7ff3fc0d31bc)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+log_likelihood! at /home/tohamy/.julia/packages/DPMMSubClusters/3xfQ9/src/distributions/mv_gaussian.jl:23
+log_likelihood! at /home/tohamy/.julia/packages/DPMMSubClusters/3xfQ9/src/distributions/mv_gaussian.jl:22 [inlined]
+sample_labels_worker! at /home/tohamy/.julia/packages/DPMMSubClusters/3xfQ9/src/local_clusters_actions.jl:105
+#12 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Distributed/src/macros.jl:87 [inlined]
+run_work_thunk at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Distributed/src/process_messages.jl:63
+unknown function (ip: 0x7ff3fc0cc95b)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+run_work_thunk at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.6/Distributed/src/process_messages.jl:72
+#96 at ./task.jl:411
+unknown function (ip: 0x7ff3fc0c2c0c)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2237 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2419
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1703 [inlined]
+start_task at /buildworker/worker/package_linux64/build/src/task.c:839
+unknown function (ip: (nil))
+unknown function (ip: (nil))
+Allocations: 920305899 (Pool: 919788862; Big: 517037); GC: 8251
+Is psi positive definite?: true
+===
+initial_clusters: 50
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 50
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 25
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 25
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 25
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 25
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 25
+===
+irit's run
+Labels_mapping: [1, 8, 10, 11, 12, 13, 14, 17, 19, 20, 21, 22, 23, 24, 25, 26, 32, 33, 37, 39, 40, 42, 45, 49, 50]
+Is psi positive definite?: true
+===
+initial_clusters: 25
+===

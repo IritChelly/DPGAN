@@ -1,0 +1,3 @@
+inherit_from: configs/mnist/default.yaml
+training:
+  out_dir: output/mnist/unconditional

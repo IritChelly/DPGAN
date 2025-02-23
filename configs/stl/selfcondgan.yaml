@@ -1,0 +1,24 @@
+generator:
+  nlabels: 100
+  conditioning: embedding
+  nc: 3
+discriminator:
+  nlabels: 100
+  conditioning: mask
+  nc: 3
+clusterer:
+  name: selfcondgan
+  kwargs: 
+    k_value: 100
+inherit_from: configs/stl/default.yaml
+training:
+  out_dir: output/stl/selfcondgan
+  recluster_every: 23400   # Number of iterations per epoch * Number of epochs frequency we need to recluster (e.g every 15 epochs)
+  D_lambda: 1        # weight of the discriminator loss
+  contrastive_lambda: 1  # weight of the contrastive loss
+  rec_lambda: 1  # weight of the AE loss
+  reg_type: none
+ae_args:
+  hidden_dims: [500, 500, 2000]
+  latent_dim: 128
+  n_clusters: 10  # Not used

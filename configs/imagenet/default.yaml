@@ -1,0 +1,31 @@
+data:
+  type: image
+  train_dir: /vilsrv-storage/datasets/imagenet/train  #data/ImageNet/train
+  test_dir: /vilsrv-storage/datasets/imagenet/test  #data/ImageNet/val
+  img_size: 64
+  nlabels: 1000
+generator:
+  name: resnet2
+  nlabels: 1
+  conditioning: unconditional
+discriminator:
+  name: resnet2
+  nlabels: 1
+  conditioning: unconditional
+z_dist:
+  type: gauss
+  dim: 256
+clusterer:
+  name: supervised
+training:
+  gan_type: standard
+  reg_type: real
+  reg_param: 10.
+  take_model_average: false
+  model_average_beta: 0.999
+  sample_nlabels: 20
+  log_every: 20000
+  inception_every: 100000
+  backup_every: 100000
+  sample_every: 100000
+  batch_size: 64  # There are ~1.2M points in the dataset

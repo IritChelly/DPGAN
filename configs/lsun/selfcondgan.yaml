@@ -1,0 +1,24 @@
+generator:
+  nlabels: 100
+  conditioning: embedding
+  nc: 3
+discriminator:
+  nlabels: 100
+  conditioning: mask
+  nc: 3
+clusterer:
+  name: selfcondgan
+  kwargs: 
+    k_value: 100
+inherit_from: configs/cifar/default.yaml
+training:
+  out_dir: output/cifar/selfcondgan
+  recluster_every: 25000
+  AE_lambda: 1  # weight of the AE loss
+  clustering_lambda: 0.005  # weight of the clustering loss
+  D_lambda: 1
+  reg_type: none
+ae_args:
+  hidden_dims: [500, 500, 2000]
+  latent_dim: 128
+  n_clusters: 10  # Not used

@@ -1,0 +1,36 @@
+data:
+  type: stl
+  train_dir: /vildata/meitarr/Datasets/STL10/STL10
+  img_size: 96
+  nlabels: 10
+generator:
+  name: dcgan_deep
+  nlabels: 1
+  conditioning: unconditional
+  kwargs:
+    placeholder: None
+discriminator:
+  name: dcgan_deep
+  nlabels: 1
+  conditioning: unconditional
+  kwargs:
+    placeholder: None
+z_dist:
+  type: gauss
+  dim: 128
+clusterer:
+  name: supervised
+  nimgs: 25000
+  kwargs:
+    placeholder: None
+training:
+  gan_type: standard
+  reg_type: none
+  reg_param: 0.
+  take_model_average: false
+  sample_nlabels: 20
+  log_every: 1560       # Number of iterations per epoch * 1
+  inception_every: 18720   # Number of iterations per epoch * 12
+  backup_every: 7800   # Number of iterations per epoch * 5
+  sample_every: 7800   # Number of iterations per epoch * 5
+  batch_size: 64

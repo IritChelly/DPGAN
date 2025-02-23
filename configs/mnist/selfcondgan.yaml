@@ -1,0 +1,30 @@
+generator:
+  nlabels: 100
+  conditioning: embedding
+  nc: 1  # 3
+discriminator:
+  nlabels: 100
+  conditioning: mask
+  nc: 1  # 3
+clusterer:
+  name: selfcondgan
+  nimgs: 50000
+  kwargs: 
+    k_value: 100
+inherit_from: configs/mnist/default.yaml
+training:
+  out_dir: output/mnist/selfcondgan
+  recluster_every: 25000
+  D_lambda: 1        # weight of the discriminator loss
+  contrastive_lambda: 1  # weight of the contrastive loss
+  rec_lambda: 1  # weight of the AE loss
+  kl_lambda: 1  # weight of the KL-div loss
+  batch_kl_lambda: 1  # weight of the batch KL-div loss
+  real_fake_lambda: 1  # weight of real-fake loss
+  g_variety_lambda: 1  # weight of the G variety loss
+  var_for_kl: 1  # the variance we use for the distribution p(z) when computing: D_kl(Q(z|x,y) || p(z))
+  reg_type: none
+  nworkers: 15
+encoder_args:
+  encoder_type: 'resnet18' # Options: {resnet18, resnet50}
+  encoder_output_dim: 128 # the dimension of the encoder's output layer (the one that the clusterer works on)

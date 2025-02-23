@@ -1,0 +1,585 @@
+[ Info: Julia version info
+[ Info: Julia executable: /home/tohamy/julia-1.6.1/bin/julia
+[ Info: Trying to import PyCall...
+┌ Warning: PyCall is already installed.  However, you may have trouble using
+│ this Python executable because it is statically linked to libpython.
+│ 
+│ For more information, see:
+│     https://pyjulia.readthedocs.io/en/latest/troubleshooting.html
+│ 
+│ Python executable:
+│     /vilsrv-storage/dinari/miniconda3/envs/condirit/bin/python
+│ Julia executable:
+│     /home/tohamy/julia-1.6.1/bin/julia
+└ @ Main /vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/julia/install.jl:90
+Julia Version 1.6.1
+Commit 6aaedecc44 (2021-04-23 05:59 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+      Ubuntu 16.04.7 LTS
+  uname: Linux 4.4.0-210-generic #242-Ubuntu SMP Fri Apr 16 09:57:56 UTC 2021 x86_64 x86_64
+  CPU: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz: 
+                 speed         user         nice          sys         idle          irq
+       #1-40  2200 MHz   33986826 s        280 s   14388714 s  528003490 s          0 s
+       
+  Memory: 251.79366302490234 GB (224091.859375 MB free)
+  Uptime: 1.446747e6 sec
+  Load Avg:  3.67  4.62  4.76
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-11.0.1 (ORCJIT, broadwell)
+Environment:
+  TERM = xterm-256color
+  LD_LIBRARY_PATH = :/home/tohamy/anaconda3/envs/python3/lib/:/vilsrv-storage/dinari/miniconda3/envs/python3/lib/:/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/
+  PATH = /home/tohamy/julia-1.6.1/bin:/vilsrv-storage/dinari/miniconda3/envs/condirit/bin:/vilsrv-storage/dinari/miniconda3/condabin:/vilsrv-storage/dinari/miniconda3/bin:/home/tohamy/.vscode-server/bin/e713fe9b05fc24facbec8f34fb1017133858842b/bin:/home/tohamy/bin:/home/tohamy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/cuda-9.0/bin:/vilsrv-storage/julia/julia-1.0.3/bin:/snap/bin
+  HOME = /home/tohamy
+Data mixture: [ 1636  2405   602  2075  1228  6971  2203  3607  1027 10731 13661  3755
+  6962  7963  2515  1929  2127  1561  2052   151 10594   432  3284 10183
+   346]  , where N is:  100000
+D reg gamma 0
+Fitting k-means w data shape (100000, 200)
+Done: Fitting k-means w data shape (100000, 200)
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 0 it 0] dloss = 1.4112337827682495, gloss = 0.6941044926643372, prop_real = 1.0, modes = 1, kl = 2.6650700251318225
+[epoch 1 it 1000] dloss = 1.3822534084320068, gloss = 0.6802485585212708, prop_real = 0.59426, modes = 25, kl = 0.00016489328309169345
+[epoch 2 it 2000] dloss = 1.3777918815612793, gloss = 0.702113151550293, prop_real = 0.58658, modes = 25, kl = 0.0002573964377459372
+[epoch 3 it 3000] dloss = 1.377434253692627, gloss = 0.6787416934967041, prop_real = 0.89804, modes = 25, kl = 0.0002973004121224414
+[epoch 4 it 4000] dloss = 1.368614673614502, gloss = 0.6820565462112427, prop_real = 0.93244, modes = 25, kl = 0.00019369560485005258
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 5 it 5000] dloss = 1.3817880153656006, gloss = 0.6938913464546204, prop_real = 0.96998, modes = 25, kl = 0.000270591029784262
+[epoch 6 it 6000] dloss = 1.3847146034240723, gloss = 0.6892468929290771, prop_real = 0.97748, modes = 25, kl = 0.00028955508660917246
+[epoch 7 it 7000] dloss = 1.3862054347991943, gloss = 0.6780358552932739, prop_real = 0.961, modes = 24, kl = 0.000331576380888637
+[epoch 8 it 8000] dloss = 1.372249960899353, gloss = 0.6732380390167236, prop_real = 0.93408, modes = 25, kl = 0.00019634307157360582
+[epoch 9 it 9000] dloss = 1.384554147720337, gloss = 0.6934313178062439, prop_real = 0.99218, modes = 25, kl = 0.00020887565932431844
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 10 it 10000] dloss = 1.3878908157348633, gloss = 0.6807325482368469, prop_real = 0.99594, modes = 25, kl = 0.0002936523384310143
+[epoch 11 it 11000] dloss = 1.3845939636230469, gloss = 0.6959702372550964, prop_real = 0.99996, modes = 25, kl = 0.00023162674385032744
+[epoch 12 it 12000] dloss = 1.3855985403060913, gloss = 0.691162645816803, prop_real = 0.99684, modes = 25, kl = 0.00012478791524324372
+[epoch 13 it 13000] dloss = 1.3856956958770752, gloss = 0.6995313167572021, prop_real = 0.9988, modes = 25, kl = 0.00022158384976764416
+[epoch 14 it 14000] dloss = 1.3869225978851318, gloss = 0.6948033571243286, prop_real = 0.97308, modes = 25, kl = 0.0002646367126449159
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 15 it 15000] dloss = 1.3862782716751099, gloss = 0.692470133304596, prop_real = 0.99768, modes = 25, kl = 0.0002396220989015036
+[epoch 16 it 16000] dloss = 1.3852652311325073, gloss = 0.6958087086677551, prop_real = 1.0, modes = 25, kl = 0.0002656490605515082
+[epoch 17 it 17000] dloss = 1.3861193656921387, gloss = 0.6899513602256775, prop_real = 0.99998, modes = 25, kl = 0.0002517787430871062
+[epoch 18 it 18000] dloss = 1.38533616065979, gloss = 0.6992542743682861, prop_real = 0.99886, modes = 25, kl = 0.00018536297493577675
+[epoch 19 it 19000] dloss = 1.3864167928695679, gloss = 0.6918864250183105, prop_real = 0.99896, modes = 25, kl = 0.00018614974002279438
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 20 it 20000] dloss = 1.3866822719573975, gloss = 0.6964344382286072, prop_real = 0.99682, modes = 25, kl = 0.00015470742268622773
+[epoch 21 it 21000] dloss = 1.386853575706482, gloss = 0.6890894174575806, prop_real = 1.0, modes = 25, kl = 0.00033643620083371496
+[epoch 22 it 22000] dloss = 1.386915683746338, gloss = 0.6922555565834045, prop_real = 0.99288, modes = 25, kl = 0.00027268472576072743
+[epoch 23 it 23000] dloss = 1.3867502212524414, gloss = 0.6939834356307983, prop_real = 1.0, modes = 25, kl = 0.0002549297285748747
+[epoch 24 it 24000] dloss = 1.386563777923584, gloss = 0.6928482055664062, prop_real = 1.0, modes = 25, kl = 0.0001494495373350043
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 25 it 25000] dloss = 1.3868744373321533, gloss = 0.6922111511230469, prop_real = 0.99902, modes = 25, kl = 0.0002177794263727989
+[epoch 26 it 26000] dloss = 1.3867460489273071, gloss = 0.6923291087150574, prop_real = 0.99996, modes = 25, kl = 0.0003275475642130719
+[epoch 27 it 27000] dloss = 1.3866955041885376, gloss = 0.6847307682037354, prop_real = 0.99946, modes = 25, kl = 0.00032950743282411036
+[epoch 28 it 28000] dloss = 1.3859057426452637, gloss = 0.6944024562835693, prop_real = 0.99998, modes = 25, kl = 0.00023846752593437685
+[epoch 29 it 29000] dloss = 1.386765718460083, gloss = 0.6923118233680725, prop_real = 0.99832, modes = 24, kl = 0.0002689693467004214
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 30 it 30000] dloss = 1.3864549398422241, gloss = 0.6903393268585205, prop_real = 0.99996, modes = 25, kl = 0.0003962009825155535
+[epoch 31 it 31000] dloss = 1.3864707946777344, gloss = 0.6990329027175903, prop_real = 0.99986, modes = 25, kl = 0.00024474343135821766
+[epoch 32 it 32000] dloss = 1.3868926763534546, gloss = 0.6879507303237915, prop_real = 0.99886, modes = 25, kl = 0.0003694985123422447
+[epoch 33 it 33000] dloss = 1.3866751194000244, gloss = 0.6972757577896118, prop_real = 0.99906, modes = 25, kl = 0.00020556463648684783
+[epoch 34 it 34000] dloss = 1.3866729736328125, gloss = 0.6879428625106812, prop_real = 0.99998, modes = 25, kl = 0.000263413024959978
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 35 it 35000] dloss = 1.3864543437957764, gloss = 0.6936939358711243, prop_real = 1.0, modes = 25, kl = 0.000244583862503866
+[epoch 36 it 36000] dloss = 1.386597990989685, gloss = 0.6958197355270386, prop_real = 0.9999, modes = 25, kl = 0.00028225358075491334
+[epoch 37 it 37000] dloss = 1.3864904642105103, gloss = 0.6949282884597778, prop_real = 0.99988, modes = 25, kl = 0.0001901747784770311
+[epoch 38 it 38000] dloss = 1.3864036798477173, gloss = 0.6912820339202881, prop_real = 0.98124, modes = 24, kl = 0.0001967412849449307
+[epoch 39 it 39000] dloss = 1.3865573406219482, gloss = 0.6918155550956726, prop_real = 0.9959, modes = 25, kl = 0.00030073639414702797
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 40 it 40000] dloss = 1.3866081237792969, gloss = 0.6909675598144531, prop_real = 0.99862, modes = 25, kl = 0.00019827839104074007
+[epoch 41 it 41000] dloss = 1.386544942855835, gloss = 0.6938262581825256, prop_real = 0.99966, modes = 25, kl = 0.00027308935463053735
+[epoch 42 it 42000] dloss = 1.386338233947754, gloss = 0.687337338924408, prop_real = 1.0, modes = 25, kl = 0.00030403758629455436
+[epoch 43 it 43000] dloss = 1.386362075805664, gloss = 0.6931056976318359, prop_real = 0.94976, modes = 25, kl = 0.0002879378703336837
+[epoch 44 it 44000] dloss = 1.386431097984314, gloss = 0.692516028881073, prop_real = 0.99998, modes = 25, kl = 0.0002576713244678859
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 45 it 45000] dloss = 1.386655330657959, gloss = 0.6948602199554443, prop_real = 1.0, modes = 25, kl = 0.00023649648692530766
+[epoch 46 it 46000] dloss = 1.386378526687622, gloss = 0.6958213448524475, prop_real = 1.0, modes = 25, kl = 0.00022426597326019777
+[epoch 47 it 47000] dloss = 1.3865821361541748, gloss = 0.6925866007804871, prop_real = 1.0, modes = 25, kl = 0.00032877701834030615
+[epoch 48 it 48000] dloss = 1.3865134716033936, gloss = 0.6922487616539001, prop_real = 0.99978, modes = 25, kl = 0.00017162299894470275
+[epoch 49 it 49000] dloss = 1.386307954788208, gloss = 0.6953399777412415, prop_real = 0.97672, modes = 25, kl = 0.00026066273013220073
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 50 it 50000] dloss = 1.3865981101989746, gloss = 0.6887667775154114, prop_real = 0.92958, modes = 24, kl = 0.0001965207485159466
+[epoch 51 it 51000] dloss = 1.3864459991455078, gloss = 0.6958537697792053, prop_real = 0.97104, modes = 24, kl = 0.0002943991133707659
+[epoch 52 it 52000] dloss = 1.3863381147384644, gloss = 0.6888557076454163, prop_real = 1.0, modes = 25, kl = 0.00012857770869760407
+[epoch 53 it 53000] dloss = 1.3864636421203613, gloss = 0.6949231028556824, prop_real = 0.9964, modes = 25, kl = 0.00017398772260328562
+[epoch 54 it 54000] dloss = 1.3864864110946655, gloss = 0.6903349757194519, prop_real = 0.9739, modes = 24, kl = 0.000178807433763622
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 55 it 55000] dloss = 1.3865169286727905, gloss = 0.6929129362106323, prop_real = 0.9988, modes = 25, kl = 0.0003328594790565182
+[epoch 56 it 56000] dloss = 1.3863505125045776, gloss = 0.6947315335273743, prop_real = 1.0, modes = 25, kl = 0.00030926894214149895
+[epoch 57 it 57000] dloss = 1.3864902257919312, gloss = 0.6903163194656372, prop_real = 0.99998, modes = 25, kl = 0.0002673334773045315
+[epoch 58 it 58000] dloss = 1.3862905502319336, gloss = 0.6920506954193115, prop_real = 1.0, modes = 25, kl = 0.00018436894050997464
+[epoch 59 it 59000] dloss = 1.3866113424301147, gloss = 0.6943351626396179, prop_real = 0.98832, modes = 25, kl = 0.0002525924955050544
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  6  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35
+ 37 38 41 42 44 45 46 48]
+Done: Running DP
+
+[epoch 60 it 60000] dloss = 1.3864514827728271, gloss = 0.6934678554534912, prop_real = 1.0, modes = 25, kl = 0.00022620387847981007
+[epoch 61 it 61000] dloss = 1.3865230083465576, gloss = 0.6928562521934509, prop_real = 0.98674, modes = 25, kl = 0.00016876145405718215
+[epoch 62 it 62000] dloss = 1.3865833282470703, gloss = 0.6941841840744019, prop_real = 0.99954, modes = 25, kl = 0.0003044719828067341
+[epoch 63 it 63000] dloss = 1.3864476680755615, gloss = 0.6952528953552246, prop_real = 0.95386, modes = 25, kl = 0.00018662117692809914
+[epoch 64 it 64000] dloss = 1.386431097984314, gloss = 0.6943708062171936, prop_real = 0.9761, modes = 25, kl = 0.00021539126028524995
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35 37
+ 38 41 42 44 46 48]
+Done: Running DP
+
+[epoch 65 it 65000] dloss = 1.3862152099609375, gloss = 0.6949777007102966, prop_real = 1.0, modes = 25, kl = 0.00026046208866319315
+[epoch 66 it 66000] dloss = 1.3862645626068115, gloss = 0.6958262324333191, prop_real = 0.98374, modes = 25, kl = 0.00026845923244319823
+[epoch 67 it 67000] dloss = 1.3866002559661865, gloss = 0.6937066316604614, prop_real = 0.99668, modes = 25, kl = 0.00021629969412741113
+[epoch 68 it 68000] dloss = 1.386425495147705, gloss = 0.6928480267524719, prop_real = 1.0, modes = 25, kl = 0.0002565622468913797
+[epoch 69 it 69000] dloss = 1.3863458633422852, gloss = 0.6936168670654297, prop_real = 1.0, modes = 25, kl = 0.00029076168929763585
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35 37
+ 38 41 42 44 46 48]
+Done: Running DP
+
+[epoch 70 it 70000] dloss = 1.386434555053711, gloss = 0.6911500692367554, prop_real = 0.98368, modes = 24, kl = 0.00035896839812132045
+[epoch 71 it 71000] dloss = 1.386453628540039, gloss = 0.692007839679718, prop_real = 1.0, modes = 25, kl = 0.00033490465894626053
+[epoch 72 it 72000] dloss = 1.386364221572876, gloss = 0.6922250390052795, prop_real = 1.0, modes = 25, kl = 0.0002091488773610314
+[epoch 73 it 73000] dloss = 1.3864673376083374, gloss = 0.6933234930038452, prop_real = 1.0, modes = 25, kl = 0.00029694858937582294
+[epoch 74 it 74000] dloss = 1.3864929676055908, gloss = 0.6920499801635742, prop_real = 0.99922, modes = 25, kl = 0.00040675957263331113
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 30 32 33 35 37
+ 38 41 42 44 46 48]
+Done: Running DP
+
+[epoch 75 it 75000] dloss = 1.3861103057861328, gloss = 0.6906840205192566, prop_real = 1.0, modes = 25, kl = 0.0002434657235391024
+[epoch 76 it 76000] dloss = 1.3865127563476562, gloss = 0.6956956386566162, prop_real = 1.0, modes = 25, kl = 0.00023857348298870595
+[epoch 77 it 77000] dloss = 1.3863561153411865, gloss = 0.6898476481437683, prop_real = 0.99444, modes = 25, kl = 0.0003123906970700906
+[epoch 78 it 78000] dloss = 1.3864552974700928, gloss = 0.6929100155830383, prop_real = 0.99944, modes = 25, kl = 0.00022795926808861453
+[epoch 79 it 79000] dloss = 1.3864052295684814, gloss = 0.6949177384376526, prop_real = 0.96332, modes = 25, kl = 0.0003819502623001048
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  7  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 32 33 35 37 38
+ 41 42 44 46 48]
+Done: Running DP
+
+[epoch 80 it 80000] dloss = 1.3863499164581299, gloss = 0.6930140256881714, prop_real = 0.93124, modes = 24, kl = 0.00022546042389065974
+[epoch 81 it 81000] dloss = 1.3864774703979492, gloss = 0.6942365765571594, prop_real = 0.99996, modes = 25, kl = 0.00015742112135193624
+[epoch 82 it 82000] dloss = 1.3864030838012695, gloss = 0.694212794303894, prop_real = 1.0, modes = 25, kl = 0.00024301427229647096
+[epoch 83 it 83000] dloss = 1.3864192962646484, gloss = 0.6900910139083862, prop_real = 0.96928, modes = 25, kl = 0.00024203616312921223
+[epoch 84 it 84000] dloss = 1.3864225149154663, gloss = 0.6925333738327026, prop_real = 0.99998, modes = 25, kl = 0.0003196205955007203
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 32 33 35 37 38 41
+ 42 44 46 48]
+Done: Running DP
+
+[epoch 85 it 85000] dloss = 1.3863420486450195, gloss = 0.6940375566482544, prop_real = 1.0, modes = 25, kl = 0.0002583286508766871
+[epoch 86 it 86000] dloss = 1.3863565921783447, gloss = 0.6935782432556152, prop_real = 1.0, modes = 25, kl = 0.00015121202979902465
+[epoch 87 it 87000] dloss = 1.3862857818603516, gloss = 0.6938232183456421, prop_real = 1.0, modes = 25, kl = 0.0003199530819542796
+[epoch 88 it 88000] dloss = 1.386165738105774, gloss = 0.6975207328796387, prop_real = 0.72936, modes = 21, kl = 0.00027294914326391536
+[epoch 89 it 89000] dloss = 1.3863722085952759, gloss = 0.695963442325592, prop_real = 0.98638, modes = 25, kl = 0.00023881445500292423
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 32 33 35 37 38 41
+ 42 44 48]
+Done: Running DP
+
+[epoch 90 it 90000] dloss = 1.3863298892974854, gloss = 0.6944401264190674, prop_real = 1.0, modes = 25, kl = 0.0003039905434050555
+[epoch 91 it 91000] dloss = 1.3863545656204224, gloss = 0.6924294233322144, prop_real = 1.0, modes = 25, kl = 0.00021135631523483363
+[epoch 92 it 92000] dloss = 1.3863658905029297, gloss = 0.6921110153198242, prop_real = 0.8232, modes = 23, kl = 0.00023044901139235332
+[epoch 93 it 93000] dloss = 1.3863379955291748, gloss = 0.693408191204071, prop_real = 0.87918, modes = 24, kl = 0.0002243191939834353
+[epoch 94 it 94000] dloss = 1.386389970779419, gloss = 0.6930456161499023, prop_real = 0.89436, modes = 25, kl = 0.00019964062099853746
+Original data shape: (100000, 200)
+Data shape after PCA: (100000, 100)
+
+Running DP on (100000, 100)
+Irit's wrapper!
+Lables learned: [ 1  9 10 11 12 14 15 17 18 19 21 22 23 24 25 26 27 28 32 33 35 37 38 42
+ 44 48]
+Done: Running DP
+
+[epoch 95 it 95000] dloss = 1.3863863945007324, gloss = 0.693345308303833, prop_real = 0.9974, modes = 25, kl = 0.00020916600251959155
+[epoch 96 it 96000] dloss = 1.3863656520843506, gloss = 0.6935442686080933, prop_real = 0.96024, modes = 24, kl = 0.00034778120762590705
+[epoch 97 it 97000] dloss = 1.386423110961914, gloss = 0.6970289945602417, prop_real = 0.88958, modes = 24, kl = 0.0001407086710056257
+[epoch 98 it 98000] dloss = 1.3862907886505127, gloss = 0.6929130554199219, prop_real = 0.9924, modes = 25, kl = 0.0001633483889054769
+[epoch 99 it 99000] dloss = 1.3863732814788818, gloss = 0.6912428736686707, prop_real = 1.0, modes = 25, kl = 0.00028532152848384864
+
+Finish CGAN in: 67416 seconds.
+
+Is psi positive definite?: true
+===
+initial_clusters: 50
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 50
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 6, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 45, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 32
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 30
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 30
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 30
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 30
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 30
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 30
+===
+irit's run
+Labels_mapping: [1, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 29
+===
+irit's run
+Labels_mapping: [1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 29
+===
+irit's run
+Labels_mapping: [1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 41, 42, 44, 46, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 28
+===
+irit's run
+Labels_mapping: [1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 41, 42, 44, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 28
+===
+irit's run
+Labels_mapping: [1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 41, 42, 44, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 27
+===
+irit's run
+Labels_mapping: [1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 42, 44, 48]
+Is psi positive definite?: true
+===
+initial_clusters: 27
+===
+irit's run
+Labels_mapping: [1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 32, 33, 35, 37, 38, 42, 44, 48]

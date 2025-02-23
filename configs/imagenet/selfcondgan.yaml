@@ -1,0 +1,25 @@
+generator:
+  nlabels: 100
+  conditioning: embedding
+  nc: 1  # 3
+discriminator:
+  nlabels: 100
+  conditioning: mask
+  nc: 1  # 3
+clusterer:
+  name: selfcondgan
+  nimgs: 50000
+  kwargs: 
+    k_value: 100
+inherit_from: configs/imagenet/default.yaml
+training:
+  out_dir: output/imagenet/selfcondgan
+  recluster_every: 200000  # ~every 10 epochs
+  reg_param: 0.1
+  AE_lambda: 2  # weight of the AE loss
+  clustering_lambda: 0.0001  # weight of the clustering loss
+  D_lambda: 1
+ae_args:
+  hidden_dims: [500, 500, 2000]
+  latent_dim: 200
+  n_clusters: 10  # Not used

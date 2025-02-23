@@ -1,0 +1,112 @@
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/sklearn/utils/linear_assignment_.py:18: FutureWarning: The linear_assignment_ module is deprecated in 0.21 and will be removed from 0.23. Use scipy.optimize.linear_sum_assignment instead.
+  warnings.warn(
+https://app.neptune.ai/itohamy/G-E-and-D/e/GEAN-11
+/vilsrv-storage/tohamy/BNP/GAN_DP/code_18_E_on_G_dpgan/dp-gan/gan_training/config.py:19: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cfg_special = yaml.load(f)
+/vilsrv-storage/tohamy/BNP/GAN_DP/code_18_E_on_G_dpgan/dp-gan/gan_training/config.py:30: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cfg = yaml.load(f)
+{'clusterer': {'kwargs': {'k_value': 100,
+                          'num_components': -1,
+                          'placeholder': 'None'},
+               'name': 'selfcondgan',
+               'nimgs': 25000},
+ 'data': {'deterministic': False,
+          'img_size': 32,
+          'nlabels': 10,
+          'train_dir': 'data/CIFAR',
+          'type': 'cifar10'},
+ 'discriminator': {'conditioning': 'mask',
+                   'kwargs': {'pack_size': 1, 'placeholder': 'None'},
+                   'name': 'dcgan_deep',
+                   'nc': 3,
+                   'nlabels': 100},
+ 'generator': {'conditioning': 'embedding',
+               'kwargs': {'placeholder': 'None'},
+               'name': 'dcgan_deep',
+               'nc': 3,
+               'nlabels': 100},
+ 'training': {'D_lambda': 1,
+              'backup_every': 10000,
+              'batch_kl_lambda': 1,
+              'batch_size': 64,
+              'beta1': 0.0,
+              'beta2': 0.99,
+              'burnin_time': 0,
+              'contrastive_lambda': 1,
+              'g_variety_lambda': 1,
+              'gan_type': 'standard',
+              'inception_every': 10000,
+              'inception_nsamples': 50000,
+              'kl_lambda': 1,
+              'log_every': 1000,
+              'lr_d': 0.0001,
+              'lr_e': 0.0003,
+              'lr_g': 0.0001,
+              'model_average_beta': 0.999,
+              'monitoring': 'tensorboard',
+              'ntest': 128,
+              'nworkers': 20,
+              'optimizer': 'adam',
+              'out_dir': 'output/cifar/selfcondgan',
+              'real_fake_lambda': 1,
+              'rec_lambda': 1,
+              'recluster_every': 25000,
+              'reg_param': 0.0,
+              'reg_type': 'none',
+              'sample_every': 5000,
+              'sample_nlabels': 20,
+              'take_model_average': False,
+              'var_for_kl': 1}}
+Files already downloaded and verified
+Getting features from penultimate
+Found no files with extension "model" under output/cifar/selfcondgan/chkpts
+File not found output/cifar/selfcondgan/chkpts/model_-0000001.pt
+Trying again to load w/o data parallel modules
+File not found output/cifar/selfcondgan/chkpts/model_-0000001.pt
+
+Models not found
+Loading clusterer:
+D reg gamma 0.0
+
+Start: Encoder pre-training, on 1 epochs.
+[epoch 1, it  781]: Encoder_total_loss = 4.3288, Encoder_contrastive_loss = 4.3164, Encoder_kl_loss = 0.0125
+
+Done: Encoder pre-training
+
+Initializing new clusterer. The first clustering can be quite slow.
+Original data shape: (25000, 128)
+Data shape after PCA: (25000, 128)
+Fitting k-means w data shape (25000, 128)
+Done: Fitting k-means w data shape (25000, 128)
+NMI (kmeans): 0.13120336600511992
+Weights: [0.00428 0.02328 0.01144 0.00672 0.01068 0.01128 0.01428 0.01276 0.0104
+ 0.01144 0.0066  0.01308 0.00572 0.00732 0.01856 0.00632 0.01812 0.0126
+ 0.00912 0.00756 0.00488 0.00944 0.009   0.01456 0.00924 0.009   0.01168
+ 0.00576 0.00796 0.00524 0.00972 0.009   0.01116 0.00992 0.00672 0.01144
+ 0.00932 0.01024 0.0122  0.01412 0.00852 0.0076  0.0116  0.01004 0.01244
+ 0.01084 0.01224 0.0054  0.00676 0.00864 0.01032 0.01156 0.0204  0.01
+ 0.0114  0.00964 0.00964 0.00568 0.00972 0.0126  0.00428 0.00916 0.01316
+ 0.01248 0.00448 0.00868 0.0058  0.01008 0.01116 0.01004 0.00524 0.01636
+ 0.00976 0.00968 0.01516 0.0064  0.00632 0.00904 0.00668 0.0076  0.0114
+ 0.006   0.01604 0.00868 0.01228 0.01204 0.00272 0.00536 0.00712 0.0104
+ 0.01784 0.0074  0.00692 0.01656 0.00236 0.01528 0.01376 0.01284 0.00488
+ 0.01136] 
+
+
+Start main training...
+
+Number of data points: 49984
+Number of iterations per epoch: 781
+Number of total iterations: 156200
+Starting from iteration: -1
+[epoch 0, it    0] Losses: G = 0.8921, G_real_fake = 1.5579, G_kl = 0.0237, D = 1.3867, E_cntrs = 4.3637, E_kl = 0.0184
+Creating samples...
+Saving backup...
+[epoch 1, it 1000] Losses: G = 0.5499, G_real_fake = 0.0059, G_kl = 0.0208, D = 0.9221, E_cntrs = 4.2722, E_kl = 0.0206
+[epoch 2, it 2000] Losses: G = 1.4961, G_real_fake = 0.0018, G_kl = 0.0234, D = 0.7675, E_cntrs = 4.0297, E_kl = 0.0227
+[epoch 3, it 3000] Losses: G = 1.7520, G_real_fake = 0.0013, G_kl = 0.0209, D = 0.8947, E_cntrs = 4.0464, E_kl = 0.0200
+[epoch 5, it 4000] Losses: G = 2.3587, G_real_fake = 0.0017, G_kl = 0.0202, D = 0.3570, E_cntrs = 3.8639, E_kl = 0.0194
+[epoch 6, it 5000] Losses: G = 5.1407, G_real_fake = 0.0012, G_kl = 0.0214, D = 0.0558, E_cntrs = 3.9564, E_kl = 0.0209
+Creating samples...
+[epoch 7, it 6000] Losses: G = 2.9925, G_real_fake = 0.0012, G_kl = 0.0197, D = 0.2928, E_cntrs = 3.9123, E_kl = 0.0192
+[epoch 8, it 7000] Losses: G = 4.1888, G_real_fake = 0.0004, G_kl = 0.0207, D = 0.1134, E_cntrs = 3.7411, E_kl = 0.0198
